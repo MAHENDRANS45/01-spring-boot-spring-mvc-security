@@ -123,7 +123,7 @@ graph TD
     F -->|Yes| G[Require MANAGER role]
     F -->|No| H{Is path /systems/**?}
     H -->|Yes| I[Require ADMIN role]
-    H -->|No| J[Authenticated (any role)]
+    H -->|No| J["Authenticated (any role)"]
     C --> K[Access Granted]
     E --> L{User has EMPLOYEE?}
     L -->|Yes| K
